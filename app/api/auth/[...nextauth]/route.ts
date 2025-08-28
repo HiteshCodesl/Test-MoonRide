@@ -49,6 +49,16 @@ const handler = NextAuth({
             },
          })
     ],
+    callbacks: {
+     async session({ session, token }) {
+        if(token){
+            if (session.user) {
+                session.user.image = token.picture || session.user.image;
+            }
+        }
+        return session;
+     }
+    },
      pages: {
         signIn: '/login'
     },
