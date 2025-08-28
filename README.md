@@ -50,8 +50,8 @@ Lucide Icons
  for icons
 
 📷 Screenshots
-![Login](/login.png)
-![Dashboard](/Dashboard.png)
+![Login](./public/login.png)
+![Dashboard](./public/Dashboard.png)
 🔐 Authentication
 
 Signup Page
