@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📊 Dashboard & Authentication App
 
-## Getting Started
+A full-stack Next.js application with authentication (email + OAuth), a modern dashboard UI, and interactive charts built using Chart.js.
 
-First, run the development server:
+🚀 Features
 
-```bash
+🔑 Authentication
+
+Sign Up & Login with Email/Password
+
+OAuth Login with Google & GitHub (NextAuth)
+
+🖥️ Dashboard
+
+KPI cards with dynamic growth indicators (green ↑ for positive, red ↓ for negative)
+
+Revenue Bar Chart (responsive with Chart.js)
+
+Product Donut Chart showing top products with percentage share
+
+"Add Profile" feature with a dialog form for adding user details
+
+🌙 Dark Mode Support (toggle switch using NextThemes)
+
+🎨 Responsive and modern UI built with TailwindCSS + shadcn/ui
+
+📂 Proper App Router structure:
+
+/login and /signup → no sidebar
+
+/dashboard → sidebar + analytics
+
+🛠️ Tech Stack
+
+Next.js 14 (App Router)
+
+NextAuth.js
+ for authentication
+
+Tailwind CSS
+ for styling
+
+shadcn/ui
+ for UI components
+
+Chart.js
+ + react-chartjs-2 wrapper for charts
+
+Lucide Icons
+ for icons
+
+📷 Screenshots
+![Login](/login.png)
+![Dashboard](/Dashboard.png)
+🔐 Authentication
+
+Signup Page
+
+
+Login Page
+
+
+📊 Dashboard
+
+⚡ Getting Started
+1️⃣ Clone the repo
+git clone https://github.com/HiteshCodesl/Test-MoonRide.git
+cd moonride
+
+2️⃣ Install dependencies
+pnpm install
+
+3️⃣ Setup environment variables
+
+Create a .env.local file in the root and add:
+
+DATABASE_URL=postgresql://user:password@localhost:5432/mydb
+NEXTAUTH_SECRET=your_secret
+GOOGLE_CLIENT_ID=your_client_id
+GOOGLE_CLIENT_SECRET=your_client_secret
+GITHUB_ID=your_github_id
+GITHUB_SECRET=your_github_secret
+
+4️⃣ Run Prisma migrations
+npx prisma migrate dev
+
+5️⃣ Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App runs on 👉 http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📌 Roadmap
 
-## Learn More
+ Add role-based access control
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ Deploy on Vercel
