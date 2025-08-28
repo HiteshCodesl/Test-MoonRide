@@ -2,6 +2,10 @@
 
 A full-stack Next.js application with authentication (email + OAuth), a modern dashboard UI, and interactive charts built using Chart.js.
 
+📷 Screenshots
+![Login](./public/login.png)
+![Dashboard](./public/Dashboard.png)
+
 🚀 Features
 
 🔑 Authentication
@@ -49,9 +53,7 @@ Chart.js
 Lucide Icons
  for icons
 
-📷 Screenshots
-![Login](./public/login.png)
-![Dashboard](./public/Dashboard.png)
+
 🔐 Authentication
 
 Signup Page
