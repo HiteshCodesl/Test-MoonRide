@@ -46,7 +46,7 @@ export function ShowUsers({isOpen, setIsOpen}: Prop) {
       <ul>
         {users.map((user, index)=>(
             <div key={index} className="flex gap-4">
-                <ol className=" font-bold">{user.name}</ol>
+                <ol className="name font-bold">{user.name}</ol>
                 <ol className=" font-bold">{user.email}</ol>
                 <ol className=" font-bold">{user.phone}</ol>
                 </div>

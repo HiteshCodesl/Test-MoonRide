@@ -5,6 +5,8 @@ A full-stack Next.js application with authentication (email + OAuth), a modern d
 📷 Screenshots
 ![Login](./public/login.png)
 ![Dashboard](./public/Dashboard.png)
+![Add Profile](./public/Usermodule.png)
+![Users List](./public/Users.png)
 
 🚀 Features
 
