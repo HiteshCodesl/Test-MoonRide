@@ -15,3 +15,12 @@ model User {
   name     String
   password String
 }
+
+model Profile {
+  id        String @id @default(uuid())
+  name      String
+  email     String
+  phone     String
+}
+
+

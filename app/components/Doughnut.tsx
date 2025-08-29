@@ -38,7 +38,7 @@ export function TopProductsChart() {
   }
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between bg-card p-6 rounded-xl shadow-md">
+    <div className="flex flex-col md:flex-row items-center justify-between bg-card p-6 rounded-xl shadow-md max-w-screen-md mx-auto">
       {/* Chart */}
       <div className="w-[200px] h-[200px]">
         <Doughnut data={data} options={options} />

@@ -13,7 +13,7 @@ export default function page() {
     </div>
       
 
-      <div className="mt-5  grid sm:grid-cols-1  md:grid-cols-4  gap-8 max-w-screen-md md:ml-18 lg:mx-auto">
+      <div className="mt-5  grid sm:grid-cols-1  md:grid-cols-4  gap-8 max-w-screen-md md:ml-18 lg:mx-auto ml-5">
        <Card icon={BanknoteArrowUp} title="Total Revenue" num='$ 22352' growth={-5.6}/>
         <Card icon={Landmark} title="Total Transactions" num='1520' growth={+2.5}/>
          <Card icon={ThumbsUp} title="Total Likes" num='9093' growth={+2.5}/>
@@ -22,12 +22,12 @@ export default function page() {
 
       <RevenueBarChart  />
 
-      <div className="mt-10 flex justify-center gap-5">
+      <div className="mt-10   justify-center gap-5">
               <TopProductsChart />
               <AddProfileDialog />
       </div>
 
-        </div>
+      </div>
    
   )
 }
